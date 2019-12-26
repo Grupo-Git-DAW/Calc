@@ -103,6 +103,7 @@ void sumar()
     printf("La suma de %f y %f es --> %f", a, b, res);
 }
 
+
 void seno()
 {
     int a;
@@ -127,7 +128,7 @@ void coseno()
     
     resultado=cos(a*PI/180);
     
-    printf("El seno de %d es %lf", a, resultado);
+    printf("El coseno de %d es %lf", a, resultado);
     system("pause");
 }
 
@@ -141,7 +142,7 @@ void tangente()
     
     resultado=tan(a*PI/180);
     
-    printf("El seno de %d es %lf", a, resultado);
+    printf("El tangente de %d es %lf", a, resultado);
     system("pause");
 }
 
@@ -154,7 +155,7 @@ void arcoseno()
    
     resultado = asin(a);
     
-    printf("\nEl arco seno de %.2f es %.2f",a, resultado);
+    printf("\nEl arco seno de %f es %.2f",a, resultado);
     system("pause");
 }
 
@@ -166,7 +167,7 @@ void arcoCoseno(){
   
   resultado = acos(a);
   
-  printf("\nEl arco coseno de %.2f es %.2f",a, resultado);
+  printf("\nEl arco coseno de %f es %.2f",a, resultado);
   system("pause");
 }
 
@@ -178,9 +179,10 @@ void arcoTangente(){
   
   resultado = atan(a);
   
-  printf("\nEl arco tangente de %.2f es %.2f",a, resultado);
+  printf("\nEl arco tangente de %f es %.2f",a, resultado);
   system("pause");
 }
+
 
 void trigonometria()
 {
