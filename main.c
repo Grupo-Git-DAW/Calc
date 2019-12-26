@@ -3,60 +3,61 @@
 
 void dividir()
 {
-    int a,b,res,resto;
+    float a,b,res;
+
     
     printf("Primer Número\n");
-    scanf("%d",&a);
+    scanf("%f",&a);
     printf("Segundo Número\n");
-    scanf("%d",&b);
+    scanf("%f",&b);
     
     res = a/b;
-    resto = a%b;
+
     
-    printf("La división ENTERA entre %d y %d es --> %d\n", a, b, res);
-    printf("El resto es --> %d", resto);
+    printf("La división entre %f y %f es --> %f\n", a, b, res);
+
 }
 
 void multiplicar()
 {
-    int a,b,res;
+    float a,b,res;
     
     printf("Primer Número\n");
-    scanf("%d",&a);
+    scanf("%f",&a);
     printf("Segundo Número\n");
-    scanf("%d",&b);
+    scanf("%f",&b);
     
     res = a*b;
     
-    printf("La multiplicación entre %d y %d es --> %d", a, b, res);
+    printf("La multiplicación entre %f y %f es --> %f", a, b, res);
 }
 
 void restar()
 {
-    int a,b,res;
+    float a,b,res;
     
     printf("Primer Número\n");
-    scanf("%d",&a);
+    scanf("%f",&a);
     printf("Segundo Número\n");
-    scanf("%d",&b);
+    scanf("%f",&b);
     
     res = a-b;
     
-    printf("La resta de %d y %d es --> %d", a, b, res);
+    printf("La resta de %f y %f es --> %f", a, b, res);
 }
 
 void sumar()
 {
-    int a,b,res;
+    float a,b,res;
     
     printf("Primer Número\n");
-    scanf("%d",&a);
+    scanf("%f",&a);
     printf("Segundo Número\n");
-    scanf("%d",&b);
+    scanf("%f",&b);
     
     res = a+b;
     
-    printf("La suma de %d y %d es --> %d", a, b, res);
+    printf("La suma de %f y %f es --> %f", a, b, res);
 }
 
 int main() 
