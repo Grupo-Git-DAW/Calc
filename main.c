@@ -3,6 +3,17 @@
 #include <math.h>
 #define PI 3.14
 
+void exponencial()
+{
+    int numero,exponente,resultado=1;
+    for(int i = 0; i<exponente;i++)
+    {
+        resultado*=numero;
+    }
+    
+}
+
+
 void raiz()
 {
     int a, b, res=0, cont=1, contador;
