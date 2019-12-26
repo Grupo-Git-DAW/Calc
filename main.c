@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 void dividir()
@@ -59,6 +59,147 @@ void sumar()
     
     printf("La suma de %f y %f es --> %f", a, b, res);
 }
+
+void seno()
+{
+    int a;
+    float resultado1;
+    
+    printf("Introduzca el valor angulo\n");
+    scanf("%d",&a);
+    
+    resultado1=sin(a*PI/180);
+    
+    printf("El seno de %d es %lf", a, resultado1);
+    system("pause");
+}
+
+void coseno()
+{
+    int a;
+    float resultado;
+    
+    printf("Introduzca el valor angulo\n");
+    scanf("%d",&a);
+    
+    resultado=cos(a*PI/180);
+    
+    printf("El seno de %d es %lf", a, resultado);
+    system("pause");
+}
+
+void tangente()
+{
+    int a;
+    float resultado;
+    
+    printf("Introduzca el valor angulo\n");
+    scanf("%d",&a);
+    
+    resultado=tan(a*PI/180);
+    
+    printf("El seno de %d es %lf", a, resultado);
+    system("pause");
+}
+
+void arcoseno()
+{
+    float a, resultado;
+    
+    printf("Ingrese el valor de x: ");
+    scanf("%f", &a);
+   
+    resultado = asin(a);
+    
+    printf("\nEl arco seno de %.2f es %.2f",a, resultado);
+    system("pause");
+}
+
+void arcoCoseno(){
+  float a, resultado;
+  
+  printf("Ingrese el valor de x: ");
+  scanf("%f", &a);
+  
+  resultado = acos(a);
+  
+  printf("\nEl arco coseno de %.2f es %.2f",a, resultado);
+  system("pause");
+}
+
+void arcoTangente(){
+  float a, resultado;
+  
+  printf("Ingrese el valor de x: ");
+  scanf("%f", &a);
+  
+  resultado = atan(a);
+  
+  printf("\nEl arco tangente de %.2f es %.2f",a, resultado);
+  system("pause");
+}
+
+void trigonometria()
+{
+    int opc;
+    float res;
+    
+    printf("¿Que desea realizar:\n");
+    printf("1.- Seno\n");
+    printf("2.- Coseno\n");
+    printf("3.- Tangente\n");
+    printf("4.- Arco seno\n");
+    printf("5.- Arco coseno\n");
+    printf("6.- Arco tangente\n");
+    scanf("%d",&opc);
+    
+    switch(opc)
+    {
+        
+        case 1:
+           
+            seno();
+            
+        break;
+        
+        
+        case 2:
+            
+            coseno();
+            
+        break;
+        
+        
+        case 3:
+            
+            tangente();
+            
+        break;
+        
+        case 4:
+            
+            arcoseno();
+            
+        break;
+        
+        case 5:
+            
+            arcoCoseno();
+            
+        break;
+        
+        case 6:
+            
+            arcoTangente();
+            
+        break;
+                
+                
+        
+    }
+    
+}
+
 
 int main() 
 {
