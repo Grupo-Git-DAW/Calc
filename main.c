@@ -1,5 +1,48 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#define PI 3.14
+
+void raiz()
+{
+    int a, b, res=0, cont=1, contador;
+    
+    printf("Índice\n");
+    scanf("%d",&a);
+    printf("Radicando\n");
+    scanf("%d",&b);
+    
+    
+    for(int i = 1 ; contador < b ; i++)
+    {
+        
+        
+        for(int j = 0 ; j < a ; j++)
+        {
+            cont*=i;
+        }
+        printf("i %d",i);
+        printf("exponencial %d\n", cont);
+        
+        if(cont == b)
+        {
+            res=i;
+        }
+        contador=cont;
+        cont=1;
+    }
+    
+    if(res != 0)
+    {
+        printf("La raiz con índice = %d y radicando = %d es --> %d", a, b, res);
+        
+    }
+    else
+    {
+        printf("No existe raiz con el índice y el radicando introducidos");
+    }
+}
+
 
 void dividir()
 {
@@ -204,7 +247,6 @@ void trigonometria()
 int main() 
 {
     char n;
-    int x=1;
     
     printf("¿Qué quieres hacer?\n");
    
@@ -214,79 +256,66 @@ int main()
     printf("D o d para Dividir\n");
     printf("T o t para Trigonometria\n");
     printf("E o e  para Exponenciales\n");
-    printf("R o r para Raices\n");
+    printf("P o p para Raices\n");
     printf("L o l para Logaritmo\n");
     printf("X o x para Salir\n");
     
     
     scanf("%c",&n);
            
-    while(x != 0)
-    {    
-        switch
+        
+        switch(n)
            {
             
                 case 's':
                 case 'S': sumar();
-                x=0;
+                
                     break;
         
                 case 'r':
                 case 'R': restar();
-                x=0;
+                
                     break;
         
                 case 'd':
                 case 'D': dividir();
-                x=0;
+                
                     break;
         
                 case 'm':
                 case 'M': multiplicar();
-                x=0;
+                
                     break;
-     /*   
+        
                 case 't':
                 case 'T': trigonometria();
-      *         x=0;
+               
                     break;
+        //
+        //        case 'e':
+        //        case 'E': exponencial();
+         //      x=0;
+         //           break;
         
-                case 'e':
-                case 'E': exponencial();
-      *         x=0;
+                case 'p':
+                case 'P': raiz();
+               
                     break;
-        
-                case 'r':
-                case 'R': raiz();
-      *         x=0;
-                    break;
-        
+       /* 
                 case 'l':
                 case 'L': logatirmo();
-      *         x=0;
+              
                     break;
         
                 case 'x':
                 case 'X': salir();
-      *         x=0;
+               
                     break;
        */ 
                 default:
                 printf("Caracter no valido");
-                x=0;
                 
-                    
              }
-                
-        
-            return 0; 
-                  
-    }
-                       
-  
- 
-        
-    
-    
-        
+
+            return 0;                 
 }
